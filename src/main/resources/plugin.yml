@@ -1,0 +1,7 @@
+name: FlyTime
+version: '${project.version}'
+main: me.jb.flytime.FlyTime
+api-version: 1.13
+depend: [ PlaceholderAPI, WorldGuard ]
+authors: [ Jb ]
+website: https://discord.io/AVizion

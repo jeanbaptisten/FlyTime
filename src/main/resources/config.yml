@@ -1,0 +1,129 @@
+#   Message configuration file generated for FlyTime plugin.
+
+# Choix du delay entre chaque sauvegarde de donnée.
+# Plus la valeur est faible, plus les performances demandées seront importantes.
+# Il s'agit aussi du temps maximal de perte de donnée. (Dans le cas d'un crash par exemple)
+# Unité : secondes.
+saveDelay: 60
+
+# Temps de NoFall maximal pour un joueur sortant du fly.
+# Après la désactivation du fly, le joueur verra sa prochaine chute dans les x secondes annulée.
+# Unité : secondes.
+noFallTime: 10
+
+placeholder:
+  # Temps de fly illimité
+  infinite: Illimité
+
+# Configuration des messages globaux des commandes.
+globalCommands:
+  PERMISSION_DENIED: "I'm sorry, but you do not have permission to perform this command."
+  UNKNOWN_COMMAND: "&8(&4&l✘&8) &cError: {command} {syntax}>"
+  ERROR_PREFIX: "Error: {message}"
+  INVALID_SYNTAX: "&8(&4&l✘&8) &cError: <c2>{command}</c2> <c3>{syntax}</c3>"
+  ERROR_PERFORMING_COMMAND: "I'm sorry, but there was an error performing this command."
+  INFO_MESSAGE: "{message}"
+  PLEASE_SPECIFY_ONE_OF: "Error: Please specify one of (<c2>{valid}</c2>)."
+  MUST_BE_A_NUMBER: "{num} must be a number."
+  MUST_BE_MIN_LENGTH: "Must be at least {min} characters long."
+  MUST_BE_MAX_LENGTH: "Must be at most {max} characters long."
+  PLEASE_SPECIFY_AT_LEAST: "Must be at least {min} characters long."
+  PLEASE_SPECIFY_AT_MOST: "Please specify a value at most {max}."
+  NOT_ALLOWED_ON_CONSOLE: "Error: Console may not execute this command."
+  COULD_NOT_FIND_PLAYER: "Could not find a player by the name: <c2>{search}</c2>"
+  NO_COMMAND_MATCHED_SEARCH: "No command matched <c2>{search}</c2>."
+
+# Configuration des messages spécifiques au plugin.
+flyOn: "&8(&2&l✔&8) &aVous avez &2activé &ale mode de vol."
+flyOff: "&8(&3&l✎&8) &bVous avez &3désactivé &ble mode de vol."
+flyDisable: "&8(&4&l✘&8) &cLe mode &4vol &cest désactivé."
+flyEnabled: "&8(&2&l✔&8) &aLe mode &4vol &aest activé."
+flyObtained: "&8(&3&l✎&8) &bVous avez gagné &3%fly_time_add% &bde temps de vol."
+flyGiven: "&8(&9&lADM&8)  &bVous avez ajouté &3%fly_time_add% &bde temps de vol à %player_name%."
+flyRemoved: "&8(&3&l✎&8) &bVous avez perdu &3%fly_time_remove% &bde temps de vol."
+flyRemovedSender: "&8(&9&lADM&8)  &bVous avez enlevé &3%fly_time_remove% &bde temps de vol à %player_name%."
+cannotAddFlyTime: "&8(&9&lADM&8)  §cVous ne pouvez pas ajouter de temps à %player_name%."
+cannotRemoveFlyTime: "&8(&9&lADM&8)  §cVous ne pouvez pas enlever de temps à %player_name%."
+notEnoughFlytime: "&8(&4&l✘&8)  §cVous n'avez pas assez de temps de fly."
+alreadyUnlimitedFlyTime: "&8(&9&lADM&8)  §cLe joueur %player_name% a déjà un temps de fly infini."
+doesntUnlimitedFlyTime: "&8(&9&lADM&8)  §cLe joueur %player_name% n'a pas le fly infini."
+unlimitedFlyTimeGiven: "&8(&9&lADM&8)  §cLe joueur %player_name% a maintenant un temps de vol infini."
+unlimitedFlyTimeGet: "&8(&3&l✎&8) &bVous avez obtenu un temps de vol illimité."
+unlimitedFlyTimeTaken: "&8(&9&lADM&8)  §cLe joueur %player_name% n'a plus de temps de vol infini."
+unlimitedFlyTimeLost: "&8(&3&l✎&8) &bVous avez obtenu un temps de vol illimité."
+playerHaveBypass: "&8(&3&l✎&8) &bLe joueur %player_name% a la permission de bypass."
+help: "&8(&9&lADM&8) &cErreur: Mauvaise commande."
+reload: "&8(&9&lADM&8) &aPlugin reloaded."
+
+# Configuration des titles.
+title:
+  flyObtained:
+    title: "&8(&2&l+&8) &aTemps de vol"
+    subtitle: "&7%fly_time_add%"
+    fade_in: 5
+    stay: 20
+    fade_out: 5
+    active: true
+  reminderFly:
+    title: "&8(&6&l⚠&8) &eTemps de vol"
+    subtitle: "&7%fly_time_remaining% restantes"
+    fade_in: 5
+    stay: 20
+    fade_out: 5
+    active: true
+countdown:
+  5:
+    message:
+      text: "&8(&6&l⚠&8) &eVous avez §65 secondes &erestantes de temps de vol."
+      active: true
+    title:
+      title: "&8(&6&l⚠&8) &eTemps de vol"
+      subtitle: "5 secondes restantes"
+      fade_in: 5
+      stay: 20
+      fade_out: 5
+      active: true
+  4:
+    message:
+      text: "&8(&6&l⚠&8) &eVous avez §64 secondes &erestantes de temps de vol."
+      active: true
+    title:
+      title: "&8(&6&l⚠&8) &eTemps de vol"
+      subtitle: "&74 secondes restantes"
+      fade_in: 5
+      stay: 20
+      fade_out: 5
+      active: true
+  3:
+    message:
+      text: "&8(&6&l⚠&8) &eVous avez §63 secondes &erestantes de temps de vol."
+      active: true
+    title:
+      title: "&8(&6&l⚠&8) &eTemps de vol"
+      subtitle: "&e&l3 &7secondes restantes"
+      fade_in: 5
+      stay: 20
+      fade_out: 5
+      active: true
+  2:
+    message:
+      text: "&8(&6&l⚠&8) &eVous avez §62 secondes &erestantes de temps de vol."
+      active: true
+    title:
+      title: "&8(&6&l⚠&8) &eTemps de vol"
+      subtitle: "&c&l2 &7secondes restantes"
+      fade_in: 5
+      stay: 20
+      fade_out: 5
+      active: true
+  1:
+    message:
+      text: "&8(&4&l✘&8) &cVotre temps de vol est écoulé, pour obtenir du temps de vol, n'hésitez pas à nous soutenir en votant ! &8➥ /vote"
+      active: true
+    title:
+      title: "&8(&4&l✘&8) &cTemps de vol"
+      subtitle: "&cTemps de vol écoulé &7▸ &f/vote"
+      fade_in: 5
+      stay: 20
+      fade_out: 5
+      active: true
